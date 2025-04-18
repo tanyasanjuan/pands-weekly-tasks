@@ -40,3 +40,10 @@ else:
 # Deleted line, to reach the presition required in the task: return prev_guess  
 # Added round to the print statement to limit the number of decimal places displayed.
 # The result is rounded to one decimal place for better readability.
+
+#Sources:
+#https://www.geeksforgeeks.org/newton-raphson-method/
+#https://calcworkshop.com/derivatives/newtons-method/
+#https://www.datacamp.com/tutorial/python-square
+#https://www.w3resource.com/python-exercises/python-functions-exercises.php
+#https://docs.python.org/3/library/math.html#math.sqrt
