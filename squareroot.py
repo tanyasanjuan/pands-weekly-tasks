@@ -35,6 +35,8 @@ if number < 0:  # Check if the number is negative
         print("Please enter a positive floating number:")
 else:
     result = square_root(number)
-    print(f"The square root of {number} is approx {result}.")
+    print(f"The square root of {number} is approx {round(result,1)}.")
     
 # Deleted line, to reach the presition required in the task: return prev_guess  
+# Added round to the print statement to limit the number of decimal places displayed.
+# The result is rounded to one decimal place for better readability.
