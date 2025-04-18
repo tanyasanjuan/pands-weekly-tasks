@@ -28,8 +28,6 @@ def square_root(num):
         # Update the previous guess for the next iteration
         prev_guess = new_num
         
-        return prev_guess  # Return the final guess as the square root
-
 
 #main program
 number = float(input("Enter a positive number to find its square root: "))
@@ -39,4 +37,4 @@ else:
     result = square_root(number)
     print(f"The square root of {number} is approx {result}.")
     
-# The program will prompt the user to enter a positive number and then calculate its square root using the Newton-Raphson method.
+# Deleted line, to reach the presition required in the task: return prev_guess  
