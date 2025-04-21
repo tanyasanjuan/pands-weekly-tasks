@@ -20,4 +20,33 @@
 # and to functions that interact with the interpreter. 
 
 import sys
-FILENAME = sys.argv[1]
+#filename = "moby-dick.txt"
+
+# The second step is to check if the user has provided a filename as a command line argument.
+# If the user has provided a filename, the program will proceed to the next step.
+# The first argument is the file name and the second argument is the mode in which the file is opened.
+# If the user didn't provide a filename, the program will print a usage message and exit.
+# The sys.exit() function is used to exit the program with a specified exit status.
+
+if len(sys.argv) != 2:
+    sys.exit("Usage: python script.py <filename>")
+
+filename = sys.argv[1]
+# The third step is to open the file in read mode.
+
+try:
+    with open(filename, 'r') as f:
+        # The program will read the contents of the file and count the number of e's in it.
+        # The read() method reads the entire contents of the file into a string.
+        contents = f.read()
+        # The program will print the number of e's in the file.
+        print(contents)
+except FileNotFoundError:
+    # If the file does not exist, the program will print an error message and exit.
+    sys.stderr.write(f"Error: {filename} not found.")
+
+    sys.exit(1)
+# The program will print the number of e's in the file.
+
+
+
