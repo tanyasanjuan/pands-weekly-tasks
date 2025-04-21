@@ -48,5 +48,7 @@ except FileNotFoundError:
     sys.exit(1)
 # The program will print the number of e's in the file.
 
-
-
+# Important note:
+# The terminal will show the number of e's in the file.
+# excecuting the program in the terminal: python script.py <filename>
+# in this case: python es.py moby-dick.txt
