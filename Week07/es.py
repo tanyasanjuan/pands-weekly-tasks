@@ -27,24 +27,19 @@ import sys
 # The sys.exit() function is used to exit the program with a specified exit status.
 
 if len(sys.argv) != 2:
-    sys.exit("Usage: python script.py <filename>")
+    sys.exit("Usage: python moby-dick.txt <filename>")
 
 filename = sys.argv[1]
 
 # The third step is to open the file in read mode.
+# The function will read the contents of the file and count the number of 'e' s in it.
 try:
     with open(filename, 'r') as f:
-        # The program will read the contents of the file and count the number of e's in it.
-        # The read() method reads the entire contents of the file into a string.
         contents = f.read()
-        # The program will print the number of e's in the file.
-        print(contents)
+        e_count = contents.count('e')
+        print (f'The number of "e"s in this file is: {e_count}')
 except FileNotFoundError:
-    # If the file is not found, the program will print an error message and exit.
     print(f"File {filename} not found.")
     sys.exit(1)
 
-# Important note:
-# The terminal will show the number of e's in the file
-# excecuting the program in the terminal: python script.py <filename>
-# in this case: python es.py moby-dick.txt
+# To excecute the program in the terminal, should be the next way: python es.py moby-dick.txt
