@@ -36,3 +36,13 @@ h_x = x**3
 # Source: https://matplotlib.org/stable/api/_as_gen/matplotlib.pyplot.figure.html
 plt.figure(figsize=(10, 5)) # Set the figure size to 10x5 inches.
 
+# Plot the histogram with the data of normal distribution
+# plt.hist is used to create a histogram of the normal distribution (normal_dist).
+# The histogram can have parameters, like: (bins) of 30, and the color of the histogram: purple.
+# Source: https://matplotlib.org/stable/api/_as_gen/matplotlib.pyplot.hist.html
+# The alpha parameter is used to set the transparency of the histogram. 0.5 is 50% transparent.
+# Source: https://www.geeksforgeeks.org/change-the-line-opacity-in-matplotlib/
+# label: Legend label for the histogram.
+plt.hist(normal_dist, bins=30, color='#purple', alpha= 0.5, label='Normal Distribution')
+
+plt.show()
