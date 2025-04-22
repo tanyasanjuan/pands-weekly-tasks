@@ -50,9 +50,21 @@ plt.title ('Normal Distribution Histogram')
 
 # The plot of the function h(x) = x^3
 # plt.plot is used to plot the function h(x) = x^3. (It will draw a line.)
-# The color of the line is green.
+# The color of the line is aquamarine.
 # The line width is set to 2. (the thickness of the line)
 # The label is 'h(x) = x^3'
-plt.plot(x, h_x, color='green', linewidth=2, label='h(x) = x^3')
+plt.plot(x, h_x, color='aquamarine', linewidth=2, label='h(x) = x^3')
 
+# Labels and legend
+# plt.title is used to set the title of the plot.
+# plt.legend is used to show the legend of the plot.
+# plt.xlabel is used to set the x-value label.
+# plt.ylabel is used to set the y-value label.
+plt.title('Normal Distribution Histogram and h(x) = x^3')
+plt.xlabel('X-value')
+plt.ylabel('Y-value')
+plt.legend() # Show the legend with the labels of normal distribution and h(x) = x**3.
+# plt.grid is used to show the grid on the plot.
+# Source: https://matplotlib.org/stable/api/_as_gen/matplotlib.pyplot.grid.html
+plt.grid(True) # Show the grid.
 plt.show() # Show the plot.
