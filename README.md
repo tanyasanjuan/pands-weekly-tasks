@@ -42,8 +42,8 @@ All Python files are commented to:
 - [Python Docs](https://docs.python.org/)
 - [W3Schools](https://www.w3schools.com/)
 
-## ✅ Repossitory Submission
-◽ This repossitory helps to demonstrate my understanding and progression with each task.
+## ✅ Repository Submission
+◽ This repository helps to demonstrate my understanding and progression with each task.
 
 ◽ This repository (pands-weekly-tasks) includes:
 - Weekly task solutions only.
@@ -51,7 +51,7 @@ All Python files are commented to:
 
 
 ## 📜 Additional Notes
-◽ This is a separate repossitory from (pands-mywork) and (pands-project).
+◽ This is a separate repository from (pands-mywork) and (pands-project).
 
 ◽ Most of the tasks have been attempted progressively, and I’ve revisited earlier ones to improve them over time.
 
