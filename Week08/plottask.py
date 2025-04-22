@@ -43,6 +43,16 @@ plt.figure(figsize=(10, 5)) # Set the figure size to 10x5 inches.
 # The alpha parameter is used to set the transparency of the histogram. 0.5 is 50% transparent.
 # Source: https://www.geeksforgeeks.org/change-the-line-opacity-in-matplotlib/
 # label: Legend label for the histogram.
-plt.hist(normal_dist, bins=30, color='#purple', alpha= 0.5, label='Normal Distribution')
+plt.hist(normal_dist, bins=30, color='purple', alpha= 0.5, label='Normal Distribution')
+# plt.title is used to set the title of the plot.
+plt.title ('Normal Distribution Histogram')
 
-plt.show()
+
+# The plot of the function h(x) = x^3
+# plt.plot is used to plot the function h(x) = x^3. (It will draw a line.)
+# The color of the line is green.
+# The line width is set to 2. (the thickness of the line)
+# The label is 'h(x) = x^3'
+plt.plot(x, h_x, color='green', linewidth=2, label='h(x) = x^3')
+
+plt.show() # Show the plot.
