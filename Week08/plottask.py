@@ -68,3 +68,7 @@ plt.legend() # Show the legend with the labels of normal distribution and h(x) =
 # Source: https://matplotlib.org/stable/api/_as_gen/matplotlib.pyplot.grid.html
 plt.grid(True) # Show the grid.
 plt.show() # Show the plot.
+
+# Safe the plot as a PNG file.
+# plt.savefig is used to save the plot as a PNG file.
+plt.savefig('normal_distribution_histogram_and_hx.png')
