@@ -3,6 +3,14 @@
 # and the first 6 digits replaced with Xs
 # Author: Tanya San Juan
 
-account_number = input ('Please enter an 10 digit account number: ')
+# Request the user to enter a 10 digit account number
+# The variable account_number storage the infomation provided by the user as a string.
+account_number = input ('Please enter a 10 digit account number: ')
 
+# f-string is used to insert a variable in a string. 
+# the text "XXXXXX" are the first 6 hidden numbers.
+# To leave out the start index, we can 'slice strings'.  
+# {account_number[6:]} Take from the initial number to the 6th and replace them with Xs
 print (f'XXXXXX{account_number[6:]}')
+
+#Source: https://www.w3schools.com/python/python_strings_slicing.asp
