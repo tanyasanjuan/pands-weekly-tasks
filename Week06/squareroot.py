@@ -10,10 +10,6 @@
 # x = (x + n / x) / 2
 
 def square_root(num):
-    # Check if the input is a positive number
-    if num < 0:
-        print("Please enter a positive floating number:")
-    
     # Initialize the guess for the square root
     prev_guess = num / 2.0
     
@@ -27,18 +23,21 @@ def square_root(num):
             return new_num
         # Update the previous guess for the next iteration
         prev_guess = new_num
+
+        # return prev_guess: This line was deleted, to reach the presition required in the task.
         
 
 #main program
 number = float(input("Enter a positive number to find its square root: "))
-if number < 0:  # Check if the number is negative
+# Check if the number is negative, if the user enter a negative number, the program will ask for a positive number.
+if number < 0:  
         print("Please enter a positive floating number:")
 else:
     result = square_root(number)
     print(f"The square root of {number} is approx {round(result,1)}.")
-    
-# Deleted line, to reach the presition required in the task: return prev_guess  
-# Added round to the print statement to limit the number of decimal places displayed.
+
+
+# Added 'round' to the print statement to limit the number of decimal places displayed.
 # The result is rounded to one decimal place for better readability.
 
 #Sources:
